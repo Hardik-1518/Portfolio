@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Srivastava - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hardik Srivastava</h1>
+            <h2>Computer Science Engineer & Game Developer</h2>
+            <p>Aspiring Computer Science Engineer with a passion for coding, web development, and game design.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-light">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div>
+                <p>I am a final-year Computer Science Engineering student with a strong foundation in software development. My passion lies in solving problems through code, whether it's building dynamic websites or creating immersive gaming experiences.</p>
+                <p>Education: B.Tech in Computer Science Engineering, [Your University Name], Expected Graduation: [Year]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Java, Python, C++, C#</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js, SQL, NoSQL</li>
+            <li><strong>Game Development:</strong> Unity Engine, C# for Game Scripting, Basic AI & Physics for Games</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: [Project Name]</h3>
+            <p>Description of the project, what technologies were used, and its purpose.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Game 1: [Game Name]</h3>
+            <p>Description of the game, what tools were used, and what your role was.</p>
+            <a href="#" class="btn">Play Game</a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Game Developer Intern - [Company Name]</h3>
+            <p>Duration: [Month Year] - [Month Year]</p>
+            <ul>
+                <li>Assisted in developing [specific game features].</li>
+                <li>Collaborated with the design team to implement [specific features or mechanics].</li>
+                <li>Debugged and optimized code for better performance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hardik Srivastava. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+            <a href="https://github.com/yourprofile">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling JavaScript -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
